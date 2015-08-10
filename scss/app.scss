@@ -1,0 +1,137 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+// Variables + Imports
+
+@import url(http://fonts.googleapis.com/css?family=Monofett);
+
+$title-font: 'Monofett', serif;
+
+// Nav
+
+.monofett {
+	font-family: $title-font;
+}
+
+.contain-to-grid.fixed {
+	border-bottom: 1px solid $primary-color;
+}
+
+// Coloring
+
+.primary {
+	color: $primary-color;
+}
+
+.primary-background {
+	background-color: $primary-color;
+}
+
+.secondary {
+	color: $secondary-color;
+}
+
+.secondary-background {
+	background-color: $secondary-color;
+}
+
+// Carousel
+
+.image-overlay {
+	position: absolute;
+	bottom: 0px;
+	padding: 0 1rem;
+	background-color: rgba(0,0,0,0.5);
+	h1,h5 {
+		color: $white;
+	}
+}
+
+.right-abs {
+	right: 0px;
+}
+
+// Tags
+
+ul > li.tags {
+	list-style: none;
+	float: left;
+	margin: 0 2px;
+}
+
+// Tool Cards
+
+.tool-card {
+	border: 1px solid #d7d7d7;
+	margin-bottom: 1.5rem;
+	box-shadow: 2px 4px 5px 0px #d7d7d7;
+	.card-content {
+		background: #fff;
+		margin: 1.25rem;
+		.post-author {
+			text-align: center;
+		}
+		h4 {
+			color: black;
+		}
+		p {
+			color: #757D75;
+		}
+		a i {
+			font-weight: 300;
+			color: #757D75;
+			margin: 0px 0.5rem;
+			padding: 5px 9px;
+			border: 1px solid #757D75;
+			border-radius: 50%;
+		}
+		p.skill-icon {
+			position: absolute;
+			width: 2.6rem;
+			border-radius: 50%;
+			background-color: #B15200;
+			text-align: center;
+			color: #FFF;
+			padding: .5rem;
+			margin: -3rem 0;
+		}
+	}
+}
