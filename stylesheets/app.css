@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Monofett);
+@import url(http://fonts.googleapis.com/css?family=Monofett|Open+Sans:400,700|Open+Sans+Condensed:300|Ubuntu|Iconsolata|EB+Garamond|Old+Standard+TT|Cardo|Vidaloka|Neuton);
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 
@@ -6352,7 +6352,16 @@ th.hide-for-touch {
 .right-abs {
   right: 0px; }
 
-ul > li.tags {
+.hero-logo {
+  font-size: 9rem; }
+
+.huge-icon {
+  display: block;
+  font-size: 13rem;
+  color: #FFF;
+  text-shadow: 2px 2px 6px black; }
+
+ul > li.tools {
   list-style: none;
   float: left;
   margin: 0 2px; }

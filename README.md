@@ -4,14 +4,15 @@ CodeShelf is a website dedicated to collecting, creating and polishing web tools
 
 # TODO
 
-* polish navbar
+* change typeface
+* polish callout section
+* polish navbar [DONE]
 * troubleshoot weird grid behaviour
 * build singular tool page
 * add footer w/ contact form (see Foundation [Building Blocks](http://zurb.com/building-blocks/))
-* center header image and add tagline overlay to image
-* add tag filter JS
+* center header image and add tagline overlay to image [DONE/CHANGED]
+* add tag filter JS 
 * about page
-* 
 
 # THIS IS BASED ON A ... Foundation Compass Template
 
