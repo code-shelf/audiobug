@@ -62,7 +62,7 @@ body {
   background: #FFFFFF;
   color: #222222;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -1164,7 +1164,7 @@ select {
       background: #EFEFEF;
       color: #222222;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Open Sans", Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -1592,7 +1592,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3409,7 +3409,7 @@ kbd {
 
 .label {
   display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
@@ -3790,7 +3790,7 @@ ul.pagination {
   .pricing-table .title {
     background-color: #333333;
     color: #EEEEEE;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -3798,7 +3798,7 @@ ul.pagination {
   .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
     font-size: 2rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -4052,7 +4052,7 @@ ul.pagination {
 
 .side-nav {
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Roboto, Arial, sans-serif;
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -4073,7 +4073,7 @@ ul.pagination {
         color: #ff8216; }
     .side-nav li.active > a:first-child:not(.button) {
       color: #ff8216;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Open Sans", Roboto, Arial, sans-serif;
       font-weight: normal; }
     .side-nav li.divider {
       border-top: 1px solid;
@@ -4193,7 +4193,7 @@ ul.pagination {
   .sub-nav li {
     color: #999999;
     float: left;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
     font-size: 0.875rem;
     font-weight: normal;
     margin-left: 1rem;
@@ -4386,7 +4386,7 @@ table {
       display: block;
       background-color: #EFEFEF;
       color: #222222;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Open Sans", Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem 2rem; }
       .tabs dd > a:hover,
@@ -4697,7 +4697,7 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       color: #333333;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Open Sans", Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: bold;
       padding-left: 0.9375rem;
@@ -5025,7 +5025,7 @@ meta.foundation-mq-topbar {
         top: 0; }
     .top-bar-section > ul > .divider,
     .top-bar-section > ul > [role="separator"] {
-      border-right: solid 1px #dc6600;
+      border-right: solid 1px white;
       border-bottom: none;
       border-top: none;
       clear: none;
@@ -5253,7 +5253,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -5266,7 +5266,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 2.125rem; }
+  font-size: 3.375rem; }
 
 h2 {
   font-size: 1.6875rem; }
@@ -5436,7 +5436,7 @@ blockquote p {
     line-height: 1.4; }
 
   h1 {
-    font-size: 2.75rem; }
+    font-size: 6.5rem; }
 
   h2 {
     font-size: 2.3125rem; }
@@ -6341,6 +6341,9 @@ th.hide-for-touch {
 .secondary-background {
   background-color: #6F6F6F; }
 
+.row.hero {
+  padding: 100px 0; }
+
 .image-overlay {
   position: absolute;
   bottom: 0px;
@@ -6352,14 +6355,28 @@ th.hide-for-touch {
 .right-abs {
   right: 0px; }
 
-.hero-logo {
-  font-size: 9rem; }
-
 .huge-icon {
   display: block;
   font-size: 13rem;
-  color: #FFF;
-  text-shadow: 2px 2px 6px black; }
+  color: #ffc08a; }
+
+.row.callout {
+  margin: 100px auto;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 0 50px 0; }
+
+h2.callout.text-center {
+  font-weight: bold;
+  color: #FFFFFF; }
+
+p.callout {
+  color: #FFFFFF;
+  text-align: justified;
+  padding: 0 70px; }
+  p.callout a {
+    color: #FFFFFF;
+    text-decoration: underline; }
 
 ul > li.tools {
   list-style: none;

@@ -75,6 +75,9 @@ $title-font: 'Monofett', serif;
 
 // Hero
 
+.row.hero {
+	padding: 100px 0;
+}
 .image-overlay {
 	position: absolute;
 	bottom: 0px;
@@ -90,7 +93,7 @@ $title-font: 'Monofett', serif;
 }
 
 .hero-logo {
-	font-size: 9rem;
+	// font-size: 9rem;
 }
 
 // CALLOUT
@@ -98,10 +101,31 @@ $title-font: 'Monofett', serif;
 .huge-icon {
 	display: block;
 	font-size: 13rem;
-	color: #FFF;
-	text-shadow: 2px 2px 6px black;
+	color: scale-color($primary-color, $lightness: 65%);;
+	// text-shadow: 2px 2px 6px black;
 }
 
+.row.callout {
+	margin: 100px auto;
+	max-width: 100%;
+	width: 100%;
+	padding: 0 0 50px 0;
+}
+
+h2.callout.text-center {
+	font-weight: bold;
+	color: $white;
+}
+
+p.callout {
+	color: $white;
+	text-align: justified;
+	padding: 0 70px;
+	a {
+		color: $white;
+		text-decoration: underline;
+	}
+}
 // TOOLS
 
 ul > li.tools {
