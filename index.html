@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="js/slick/slick-theme.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
+  <body id="home">
 
     <!-- NAV -->
     <div class="contain-to-grid fixed">
       <nav class="top-bar fixed" data-topbar role="navigation">
         <ul class="title-area">
           <li class="name">
-            <h1><span class="primary title-font">/C</span><span class="secondary title-font">S</span></h1>
+            <a href="#home"><h1><span class="primary title-font">/C</span><span class="secondary title-font">S</span></h1></a>
           </li>
            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -30,10 +30,10 @@
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul class="right">
-            <li><a href="#" class="text-center">Tools</a></li>
-            <li><a href="#" class="text-center">Hackathons</a></li>
-            <li><a href="#" class="text-center">What is CodeShelf?</a></li>
-            <li><a href="#" class="text-center">CONTRIBUTE!</a></li>
+            <li><a href="#tools" class="text-center">Tools</a></li>
+            <li><a href="#hackathons" class="text-center">Hackathons</a></li>
+            <li><a href="#about" class="text-center">What is CodeShelf?</a></li>
+            <li><a href="#contribute" class="text-center">CONTRIBUTE!</a></li>
           </ul>
         </section>
       </nav>
@@ -94,7 +94,7 @@
     </div>
   
     <!-- TOOLS -->
-    <div class="tools row">
+    <div id="tools" class="tools row">
       <h1 class="tools text-center"><span class="primary title-font">/</span><span class="secondary title-font">TOOLS</span></h1>
       <!-- <div class="tools small-12 medium-6 large-4 columns">
         <ul class="tools">
@@ -122,14 +122,14 @@
   
     <!-- TOOL CARDS -->
     <div class="row">
-      <div class="medium-12 large-4 columns">
-        <article class="tool-card">
+      <div class="medium-6 large-4 columns">
+        <article class="tool-card border-primary">
           <img src="img/audiobug.png">
           <div class="card-content">
             <p class="skill-icon" alt="skill level icon">Lv.1</p>
             <p class="post-author">By <a href="#">Vincent Vega</a></p>
             <h4>AudioBug</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolores libero, sunt sequi natus facilis, fuga officia nisi possimus! Explicabo libero asperiores, numquam labore omnis. Eum nobis nesciunt autem. Porro?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolores libero, sunt sequi natus facilis, fuga officia nisi possimus! Explicabo libero asperiores, numquam labore omnis. Eum nobis nesciunt autem.</p>
             <p>
               <a href="TKTK">Go to tool guide ...</a> 
               <a href="#" class="right"><i class="fi-social-twitter"></i></a>
@@ -138,9 +138,9 @@
           </div>
         </article>
       </div>
-      <div class="medium-12 large-4 columns">
+      <div class="medium-6 large-4 columns">
         <article class="tool-card">
-          <img src="http://dummyimage.com/1000x750">
+          <img src="http://dummyimage.com/640x480">
           <div class="card-content">
             <p class="skill-icon" alt="skill level icon">Lv.1</p>
             <p class="post-author">By <a href="#">Brick Top</a></p>
@@ -154,9 +154,9 @@
           </div>
         </article>
       </div>
-      <div class="medium-12 large-4 end columns">
+      <div class="medium-6 large-4 end columns">
         <article class="tool-card">
-          <img src="http://dummyimage.com/1000x750">
+          <img src="http://dummyimage.com/640x480">
           <div class="card-content">
             <p class="skill-icon" alt="skill level icon">Lv.1</p>
             <p class="post-author">By <a href="#">Tyler Durden</a></p>
@@ -170,9 +170,9 @@
           </div>
         </article>
       </div>
-      <div class="medium-12 large-4 columns">
+      <div class="medium-6 large-4 columns">
         <article class="tool-card">
-          <img src="http://dummyimage.com/1000x750">
+          <img src="http://dummyimage.com/640x480">
           <div class="card-content">
             <p class="skill-icon" alt="skill level icon">Lv.1</p>
             <p class="post-author">By <a href="#">Vincent Vega</a></p>
@@ -186,9 +186,9 @@
           </div>
         </article>
       </div>
-      <div class="medium-12 large-4 columns">
+      <div class="medium-6 large-4 columns">
         <article class="tool-card">
-          <img src="http://dummyimage.com/1000x750">
+          <img src="http://dummyimage.com/640x480">
           <div class="card-content">
             <p class="skill-icon" alt="skill level icon">Lv.1</p>
             <p class="post-author">By <a href="#">Brick Top</a></p>
@@ -202,9 +202,9 @@
           </div>
         </article>
       </div>
-      <div class="medium-12 large-4 end columns">
+      <div class="medium-6 large-4 end columns">
         <article class="tool-card">
-          <img src="http://dummyimage.com/1000x750">
+          <img src="http://dummyimage.com/640x480">
           <div class="card-content">
             <p class="skill-icon" alt="skill level icon">Lv.1</p>
             <p class="post-author">By <a href="#">Tyler Durden</a></p>
@@ -217,6 +217,54 @@
             </p>
           </div>
         </article>
+      </div>
+    </div>
+
+    <!-- HACKATHON SCHEDULE -->
+
+    <h1 id="hackathons" class="tools text-center"><span class="primary title-font">/</span><span class="secondary title-font">HACKATHONS</span></h1>
+    <div class="callout primary-background row">
+      <div class="callout radius small-12 large-4 columns">
+        <h2 class="callout text-center">SEPTEMBER</h2>
+        <ul class="dates">
+          <li class="dates">
+            <p class="dates">9/7&8 - MIT Media Lab | 10am - 4pm</p>
+          </li>
+          <li class="dates">
+            <p class="dates">9/15 - Atlantic Media | 9am - 5pm</p>
+          </li>
+          <li class="dates">
+            <p class="dates">9/29&30 - Northwestern University | 12pm - 6pm</p>
+          </li>
+        </ul>
+      </div>
+      <div class="callout radius small-12 large-4 columns">
+        <h2 class="callout text-center">SEPTEMBER</h2>
+          <ul class="dates">
+            <li class="dates">
+              <p class="dates">9/7&8 - MIT Media Lab | 10am - 4pm</p>
+            </li>
+            <li class="dates">
+              <p class="dates">9/15 - Atlantic Media | 9am - 5pm</p>
+            </li>
+            <li class="dates">
+              <p class="dates">9/29&30 - Northwestern University | 12pm - 6pm</p>
+            </li>
+          </ul>
+      </div>
+      <div class="callout radius small-12 large-4 columns">
+        <h2 class="callout text-center">SEPTEMBER</h2>
+          <ul class="dates">
+            <li class="dates">
+              <p class="dates">9/7&8 - MIT Media Lab | 10am - 4pm</p>
+            </li>
+            <li class="dates">
+              <p class="dates">9/15 - Atlantic Media | 9am - 5pm</p>
+            </li>
+            <li class="dates">
+              <p class="dates">9/29&30 - Northwestern University | 12pm - 6pm</p>
+            </li>
+          </ul>
       </div>
     </div>
 

@@ -63,7 +63,6 @@ $title-font: 'Teko', sans-serif;
 	background-color: $secondary-color;
 }
 
-
 // Nav
 
 .title-font {
@@ -142,10 +141,15 @@ ul > li.tools {
 
 // Tool Cards
 
+.tool-card.border-primary {
+		border: 1px solid $primary-color;
+	}
+
 .tool-card {
 	border: 1px solid #d7d7d7;
 	margin-bottom: 1.5rem;
 	box-shadow: 2px 4px 5px 0px #d7d7d7;
+	
 	.card-content {
 		background: #fff;
 		margin: 1.25rem;
@@ -177,4 +181,10 @@ ul > li.tools {
 			margin: -3rem 0;
 		}
 	}
+}
+
+// HACKATHONS
+
+p.dates {
+	color: $white;
 }
