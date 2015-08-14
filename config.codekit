@@ -3654,6 +3654,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/audiobug.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37062,
+		"inputAbbreviatedPath": "\/img\/audiobug.png",
+		"outputAbbreviatedPath": "\/img\/audiobug.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/foundation-icons\/foundation-icons.css": {
 		"fileType": 16,
 		"ignore": 0,
