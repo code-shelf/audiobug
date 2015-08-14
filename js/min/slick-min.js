@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".cs-slick").slick({dots:!0,arrows:!0,autoplay:!0,fade:!0,cssEase:"linear"})});
