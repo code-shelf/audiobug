@@ -39,21 +39,11 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-// Variables + Imports
+// VARIABLES AND IMPORT
 
-@import url(http://fonts.googleapis.com/css?family=Monofett|Open+Sans:400,700|Open+Sans+Condensed:300|Ubuntu|Iconsolata|EB+Garamond|Old+Standard+TT|Cardo|Vidaloka|Neuton);
+@import url(http://fonts.googleapis.com/css?family=Monofett|Open+Sans:400,700|Open+Sans+Condensed:300|Ubuntu|Iconsolata|EB+Garamond|Old+Standard+TT|Cardo|Vidaloka|Neuton|Teko);
 
-$title-font: 'Monofett', serif;
-
-// Nav
-
-.monofett {
-	font-family: $title-font;
-}
-
-.contain-to-grid.fixed {
-	border-bottom: 1px solid $primary-color;
-}
+$title-font: 'Teko', sans-serif;
 
 // Coloring
 
@@ -71,6 +61,21 @@ $title-font: 'Monofett', serif;
 
 .secondary-background {
 	background-color: $secondary-color;
+}
+
+
+// Nav
+
+.title-font {
+	font-family: $title-font;
+}
+
+.contain-to-grid.fixed {
+	border-bottom: 1px solid $primary-color;
+}
+
+.top-bar-section ul li > a {
+	color: $secondary-color;
 }
 
 // Hero
@@ -101,7 +106,7 @@ $title-font: 'Monofett', serif;
 .huge-icon {
 	display: block;
 	font-size: 13rem;
-	color: scale-color($primary-color, $lightness: 65%);;
+	color: $white;
 	// text-shadow: 2px 2px 6px black;
 }
 
@@ -126,6 +131,7 @@ p.callout {
 		text-decoration: underline;
 	}
 }
+
 // TOOLS
 
 ul > li.tools {
@@ -156,7 +162,7 @@ ul > li.tools {
 			font-weight: 300;
 			color: #757D75;
 			margin: 0px 0.5rem;
-			padding: 5px 9px;
+			padding: 4px 9px;
 			border: 1px solid #757D75;
 			border-radius: 50%;
 		}

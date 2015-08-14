@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Monofett|Open+Sans:400,700|Open+Sans+Condensed:300|Ubuntu|Iconsolata|EB+Garamond|Old+Standard+TT|Cardo|Vidaloka|Neuton);
+@import url(http://fonts.googleapis.com/css?family=Monofett|Open+Sans:400,700|Open+Sans+Condensed:300|Ubuntu|Iconsolata|EB+Garamond|Old+Standard+TT|Cardo|Vidaloka|Neuton|Teko);
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 
@@ -6323,12 +6323,6 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
-.monofett {
-  font-family: "Monofett", serif; }
-
-.contain-to-grid.fixed {
-  border-bottom: 1px solid #B15200; }
-
 .primary {
   color: #B15200; }
 
@@ -6340,6 +6334,15 @@ th.hide-for-touch {
 
 .secondary-background {
   background-color: #6F6F6F; }
+
+.title-font {
+  font-family: "Teko", sans-serif; }
+
+.contain-to-grid.fixed {
+  border-bottom: 1px solid #B15200; }
+
+.top-bar-section ul li > a {
+  color: #6F6F6F; }
 
 .row.hero {
   padding: 100px 0; }
@@ -6358,7 +6361,7 @@ th.hide-for-touch {
 .huge-icon {
   display: block;
   font-size: 13rem;
-  color: #ffc08a; }
+  color: #FFFFFF; }
 
 .row.callout {
   margin: 100px auto;
@@ -6400,7 +6403,7 @@ ul > li.tools {
       font-weight: 300;
       color: #757D75;
       margin: 0px 0.5rem;
-      padding: 5px 9px;
+      padding: 4px 9px;
       border: 1px solid #757D75;
       border-radius: 50%; }
     .tool-card .card-content p.skill-icon {
