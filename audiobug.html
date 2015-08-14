@@ -62,6 +62,7 @@
       </br>
       <h1 class="bodycopy">How do I use Audiobug?</h1>
       <h4 class="bodycopy">Things to add to your HTML ...</h4>
+      <h4 class="bodycopy">To create the bug ...</h4>
         <pre>
           <code>
           &lt;div class=&quot;audioBug clearFix&quot;&gt;
@@ -70,6 +71,182 @@
           &lt;/div&gt;
           </code>
         </pre>
+      <h4 class="bodycopy">To call your jQuery ...</h4>
+        <pre>
+          <code>
+          &lt;TKTKTKTKTKKTKTKTTKKKTKT&gt;
+          </code>
+        </pre>
+      <h4 class="bodycopy">To call your audiobug script ...</h4>
+        <pre>
+          <code>
+          &lt;TKTKTKTKTKKTKTKTTKKKTKT&gt;
+          </code>
+        </pre>
+
+
+      <h1 class="bodycopy">Things to include in your Javascript file (audio-bug.js) </h1>
+        <pre>
+          <code>
+// BRING IN YOUR AUDIO FILES HERE
+
+var audioOne = 'https://d63kb4t2ifcex.cloudfront.net/201505horton/mp3/Horton_ImNotThisPicture.mp3';  // replace these with your audio files 
+var audioTwo = 'https://d63kb4t2ifcex.cloudfront.net/201505horton/mp3/Horton_WeHadBackThen.mp3';  // replace these with your audio files
+var audioThree = 'https://d63kb4t2ifcex.cloudfront.net/201505horton/mp3/Horton_IveNeverBeen.mp3';  // replace these with your audio files
+var audioFour = 'https://d63kb4t2ifcex.cloudfront.net/201505horton/mp3/Dukakis_OneOfTheValuesofFurlough.mp3';  // replace these with your audio files
+
+// SET YOUR SCROLL BREAKPOINTS HERE 
+
+var breakOne = 0;
+var breakTwo = $('.audio-two').offset().top - $(window).height();
+var breakThree = $('.audio-three').offset().top - $(window).height();
+var breakFour = $('.audio-four').offset().top - $(window).height();
+
+// SET YOUR AUDIO FILE TITLES
+
+var titleOne = 'LISTEN: The first audio file';
+var titleTwo = 'LISTEN: The second audio file';
+var titleThree = 'LISTEN: The third audio file';
+var titleFour = 'LISTEN: The fourth audio file';
+
+// DO THE STUFF
+
+var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', audioOne);
+    audioElement.setAttribute('preload', 'auto');
+    //audioElement.load()
+    $.get();
+    audioElement.addEventListener("load", function() {
+    audioElement.play();
+    }, true);
+
+    // CONTROLS THE PLAYING OF THE AUDIO
+
+    $('.audioBug').click(function() {
+
+        if ($(this).hasClass('playing')) {
+            audioElement.pause();
+            $(this).removeClass('playing');
+        } else {
+            audioElement.play();
+            $(this).addClass('playing');
+        }
+    });
+
+    // HOVERING OVER THE AUDIOBUG EXPANDS IT TO REVEAL THE AUDIO TITLE
+
+    var timer;
+        $('.audioBug').hover(function() {
+                clearTimeout(timer);
+                $(this).addClass('expanded');
+                $('.audioBug > h6').fadeIn();
+        }, function() {
+                $('.audioBug > h6').fadeOut('slow');
+                timer = setTimeout(function() {
+                        $('.audioBug').removeClass('expanded');
+                }, 1000);
+        });
+
+        // COLLAPSES THE BUG 5 SECONDS AFTER LOADING
+    
+        function removeBumper() {
+                setTimeout(function() {
+                        $('.audioBug > h6').fadeOut(500, function() {
+                                $('.audioBug').removeClass('expanded');
+                        });
+                }, 5000);
+        }
+
+        // AUDIOBUG EXPANDS TO REVEAL TITLE, THEN COLLAPSES AGAIN
+        
+        setTimeout(function() {
+                $('.audioBug').addClass('expanded');
+        }, 2000);
+        setTimeout(function() {
+                $('.audioBug > h6').fadeIn(300, function() {
+                        removeBumper();
+                });
+        }, 2700);
+
+    // SCROLLING THROUGH SET RANGES CHANGES THE AUDIO FILE AND EXPANDS THE BUG AGAIN
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > breakOne && $(this).scrollTop() < breakTwo && audioElement.src !== audioOne) {
+            audioElement.setAttribute('src', audioOne);
+            $('.audioBug > h6').text(titleOne);
+        } 
+        else if ($(this).scrollTop() > breakTwo && $(this).scrollTop() < breakThree && audioElement.src !== audioTwo) {
+            audioElement.setAttribute('src', audioTwo);
+            $('.audioBug > h6').text(titleTwo);
+        } 
+        else if ($(this).scrollTop() > breakThree && $(this).scrollTop() < breakFour && audioElement.src !== audioThree) {
+            audioElement.setAttribute('src', audioThree);
+            $('.audioBug > h6').text(titleThree);
+        } 
+        else if ($(this).scrollTop() > breakFour && audioElement.src !== audioFour) {
+            audioElement.setAttribute('src', audioFour);
+            $('.audioBug > h6').text(titleFour);
+        }
+    });
+          </code>
+        </pre>
+    <h1 class="bodycopy">Things to add to your CSS </h1>
+
+         <pre>
+            <code>
+/*clearfix hack */
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.audioBug {
+  position: fixed;
+  bottom: 5%;
+  width: 4rem;
+  right: 5%;
+  background-color: rgba(176,28,41, .8);
+  border-radius: 2rem;
+  height: 4rem;
+  float: right;
+  cursor: pointer;
+  z-index: 100;
+  transition: all .5s ease-out;
+}
+
+.expanded {
+  width: 28rem;
+}
+
+.audioBug img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: .5rem .5rem 0 .5rem;
+  float: left;
+  transition: all .5s ease-out;
+  cursor: pointer;
+}
+
+.audioBug img.bumper {
+  margin: .5rem 0 0 1rem;
+}
+
+.audioBug h6 {
+  font-size: 1.3rem;
+  color: white;
+  line-height: 1.3rem;
+  float: right;
+  width: 24rem;
+  margin-top: .5rem;
+  padding-right: 1rem;
+  display: none;
+}
+
+
+            </code>
+         </pre>
+
     </div>
 
     <!-- HOW-TO -->
