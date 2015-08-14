@@ -6372,6 +6372,8 @@ th.hide-for-touch {
 h2.callout.text-center {
   font-weight: bold;
   color: #FFFFFF; }
+  h2.callout.text-center a {
+    color: #FFFFFF; }
 
 p.callout {
   color: #FFFFFF;

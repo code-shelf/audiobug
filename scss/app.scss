@@ -119,6 +119,9 @@ $title-font: 'Teko', sans-serif;
 h2.callout.text-center {
 	font-weight: bold;
 	color: $white;
+	a {
+		color: $white;
+	}
 }
 
 p.callout {
