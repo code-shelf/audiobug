@@ -1,0 +1,242 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+// VARIABLES AND IMPORT
+
+@import url(http://fonts.googleapis.com/css?family=Monofett|Open+Sans:400,700|Open+Sans+Condensed:300|Ubuntu|Iconsolata|EB+Garamond|Old+Standard+TT|Cardo|Vidaloka|Neuton|Teko);
+
+$title-font: 'Teko', sans-serif;
+
+// Coloring
+
+.primary {
+	color: $primary-color;
+}
+
+.primary-background {
+	background-color: $primary-color;
+}
+
+.secondary {
+	color: $secondary-color;
+}
+
+.secondary-background {
+	background-color: $secondary-color;
+}
+
+// Nav
+
+.name {
+	padding: 0 20px;
+}
+
+.title-font {
+	font-family: $title-font;
+}
+
+.contain-to-grid.fixed {
+	border-bottom: 1px solid $primary-color;
+}
+
+.top-bar-section ul li > a {
+	color: $secondary-color;
+}
+
+// Hero
+
+.row.hero {
+	padding: 100px 0;
+}
+.image-overlay {
+	position: absolute;
+	bottom: 0px;
+	padding: 0 1rem;
+	background-color: rgba(0,0,0,0.5);
+	h1,h5 {
+		color: $white;
+	}
+}
+
+.right-abs {
+	right: 0px;
+}
+
+.hero-logo {
+	// font-size: 9rem;
+}
+
+// CALLOUT
+
+.huge-icon {
+	display: block;
+	font-size: 13rem;
+	color: $white;
+	// text-shadow: 2px 2px 6px black;
+}
+
+.row.callout {
+	margin: 100px auto;
+	max-width: 100%;
+	width: 100%;
+	padding: 0 0 50px 0;
+}
+
+h2.callout.text-center {
+	font-weight: bold;
+	color: $white;
+	a {
+		color: $white;
+	}	
+}
+
+p.callout {
+	color: $white;
+	text-align: justified;
+	padding: 0 70px;
+	a {
+		color: $white;
+		text-decoration: underline;
+	}
+}
+
+// TOOLS
+
+ul > li.tools {
+	list-style: none;
+	float: left;
+	margin: 0 2px;
+}
+
+// Tool Cards
+
+.tool-card.border-primary {
+		border: 1px solid $primary-color;
+	}
+
+.tool-card {
+	border: 1px solid #d7d7d7;
+	margin-bottom: 1.5rem;
+	box-shadow: 2px 4px 5px 0px #d7d7d7;
+	
+	.card-content {
+		background: #fff;
+		margin: 1.25rem;
+		.post-author {
+			text-align: center;
+		}
+		h4 {
+			color: black;
+		}
+		p {
+			color: #757D75;
+		}
+		a i {
+			font-weight: 300;
+			color: #757D75;
+			margin: 0px 0.5rem;
+			padding: 4px 9px;
+			border: 1px solid #757D75;
+			border-radius: 50%;
+		}
+		p.skill-icon {
+			position: absolute;
+			width: 2.6rem;
+			border-radius: 50%;
+			background-color: #B15200;
+			text-align: center;
+			color: #FFF;
+			padding: .5rem;
+			margin: -3rem 0;
+		}
+	}
+}
+
+// HACKATHONS
+
+p.dates {
+	color: $white;
+}
+
+// TOOL PAGES
+
+// Hero
+
+.hero-img {
+	display: block;
+	margin: 0 auto;
+	max-height: 300px;
+}
+
+.toolpage.hero.row {
+	padding: 20px 0;
+}
+
+// Copy
+
+h1.bodycopy {
+	font-weight: bold;
+	font-size: 3rem;
+	padding: 0 20px;
+}
+
+h3.bodycopy {
+	padding: 0 20px;
+}
+
+h4.bodycopy {
+	font-size: 1rem;
+	padding: 0 20px;
+}
+
+p.bodycopy {
+	padding: 0 20px;
+}
+
+h2.toolpage {
+	font-size: 1.3rem;
+}
+
+h3.toolpage {
+	font-size: 0.8rem;
+}
+
+
